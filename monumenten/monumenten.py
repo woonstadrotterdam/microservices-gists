@@ -266,7 +266,7 @@ async def query_rijksmonumenten(sessie, identificaties):
                             f"Onverwacht antwoord bij poging {poging + 1}: {resultaat}"
                         )
                         return {}
-            except aiohttp.client_exceptions.ClientResponseError as e:
+            except aiohttp.ClientResponseError as e:
                 if poging != retries - 1:
                     logger.warning(
                         f"Poging {poging + 1}/{retries} voor rijksmonumenten query mislukt. Opnieuw proberen over 1 seconde..."
@@ -300,7 +300,7 @@ async def query_verblijfsobjecten(sessie, identificaties):
                             f"Onverwacht antwoordformaat bij poging {poging + 1}: {resultaat}"
                         )
                         return []
-            except aiohttp.client_exceptions.ClientResponseError as e:
+            except aiohttp.ClientResponseError as e:
                 if poging != retries - 1:
                     logger.warning(
                         f"Poging {poging + 1}/{retries} voor verblijfsobjecten query mislukt. Opnieuw proberen in 1 seconde..."
@@ -327,7 +327,7 @@ async def query_beschermde_gebieden(sessie):
                         f"Onverwacht antwoordformaat bij poging {poging + 1}: {resultaat}"
                     )
                     return []
-        except aiohttp.client_exceptions.ClientResponseError as e:
+        except aiohttp.ClientResponseError as e:
             if poging != retries - 1:
                 logger.warning(
                     f"Poging {poging + 1}/{retries} voor beschermde gebieden query mislukt. Opnieuw proberen in 1 seconde..."
