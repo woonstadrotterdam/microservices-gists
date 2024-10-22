@@ -14,6 +14,8 @@ pip install -r requirements.txt
 
 ## Configuratie
 
+Voeg `INDIVIDUELE_BEVRAGINGEN_API_KEY` toe aan je omgevingsvariabelen. Bijvoorbeeld met `export INDIVIDUELE_BEVRAGINGEN_API_KEY=<api-key>` in je terminal. Deze API sleutel kun je aanvragen bij het Kadaster: https://www.kadaster.nl/zakelijk/producten/adressen-en-gebouwen/bag-api-individuele-bevragingen.
+
 In het script zijn enkele configuratie-instellingen die je kunt aanpassen:
 
 - `INVOER_CSV`: Het pad naar het invoer CSV-bestand. Default `temp/verblijfsobjecten.csv`.
