@@ -23,6 +23,21 @@ In het script zijn enkele configuratie-instellingen die je kunt aanpassen:
 - `UITVOER_CSV`: Het pad naar het uitvoer CSV-bestand. Default `temp/monumenten.csv`
 - `LOG_BESTAND`: Het pad naar het logbestand. Default `temp/monumenten.log`
 
+## Invoer CSV
+
+Voorbeeld invoer CSV:
+
+```csv
+bag_verblijfsobject_id
+0599010000360091
+0599010000486642
+0599010000360022
+0599010000360096
+0599010000183527
+0599010400025880
+0599010000281115
+```
+
 ## Uitvoer CSV
 
 De uitvoer CSV (`temp/monumenten.csv`) bevat alle data van de invoer csv met daar aan toegevoegd de volgende kolommen:
