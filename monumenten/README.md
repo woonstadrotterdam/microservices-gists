@@ -1,6 +1,6 @@
 # Monumenten
 
-Dit Python-script verzamelt gegevens over rijksmonumenten en beschermde gezichten. Het maakt gebruik van verschillende SPARQL-eindpunten en de BAG API.
+Dit Python-script verzamelt gegevens over rijksmonumenten en beschermde gezichten. Het maakt gebruik van verschillende SPARQL-eindpunten en de BAG API. Als input heeft het script een CSV-bestand nodig met BAG-verblijfsobjectidentificaties en het output een nieuw CSV-bestand met per BAG-verblijfsobjectidentificatie o.a. aangegeven of het een rijksmonument en/of een beschermd stadsgezicht is.
 
 ## Dependencies
 
